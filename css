@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('background-placeholder.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero .content {
+    z-index: 1;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.placeholder-img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.coming-soon {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #000000;
+}
+
+.coming-soon h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+}
