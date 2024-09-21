@@ -1,3 +1,4 @@
+/* Global styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,21 +7,31 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #ffffff;
     background-color: #000000;
+    color: #ffffff;
+    overflow-x: hidden;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #ffffff;
 }
 
 nav ul {
@@ -35,15 +46,17 @@ nav ul li a {
     font-weight: 400;
 }
 
+/* Hero Section */
 .hero {
     position: relative;
     height: 100vh;
-    background: url('background-placeholder.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    /* Use a black-to-grey gradient */
+    background: linear-gradient(to bottom, #000000, #808080); 
 }
 
 .hero .overlay {
@@ -52,32 +65,36 @@ nav ul li a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hero .content {
+    position: relative;
     z-index: 1;
     color: #ffffff;
 }
 
 .hero h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 300;
+    margin-bottom: 20px;
 }
 
 .placeholder-img {
+    position: relative;
     width: 80%;
     height: auto;
     margin-top: 20px;
     z-index: 1;
 }
 
+/* Coming Soon Section */
 .coming-soon {
     padding: 40px 20px;
     text-align: center;
@@ -90,9 +107,16 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
+.coming-soon p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* Footer styles */
 footer {
     padding: 20px;
     text-align: center;
     background-color: #000000;
     color: #ffffff;
+    margin-top: auto;
 }
